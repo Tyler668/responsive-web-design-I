@@ -68,8 +68,6 @@ nav {
 	width: 1024px;
 	justify-content: space-between;
 	align-items: center;
-	position: fixed;
-	overflow: hidden;
 	top:0;
 	height: 75px;
 }
@@ -80,7 +78,6 @@ nav {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	position: fixed;
 	top:0;
 	height: 75px;
 }
@@ -366,6 +363,7 @@ ul {
 
 .hiddenLogo{
 visibility: hidden;
+height: 0;
 
 }
  /* Responsive Design */
@@ -423,13 +421,115 @@ visibility: hidden;
         margin-left: 12%;
     }
 
-  
+
+
+	.second div{
+		width: 46%;
+	}
+
+	.second{
+		display: flex;
+		justify-content: space-between;
+		margin: 0 3%;
+		padding-right:0 9%;
+	}
+
+	.hiddenLogo{
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		justify-items: center;
+		height: 100px;
+		visibility: visible;
+	}
+
+	.logoSmall{
+		width:175px;
+		height: 35px;
+		margin-left: 5%;
+		margin-top: 5%;
+		
+	}
+
+	header{
+		padding-top: 0;
+	}
+
+	.main{
+		margin-top: 0;
+	}
+
+	.middle-img{
+		padding-left: 1%;
+	}
 
  }
 
 
 
  @media screen and (max-width: 500px){
+	body{
+		width: 800px;
+	}
+
+	#navDiv{
+		width: 800px;
+		padding-right:0%;
+		padding-left: 0;
+		margin-left: 0;
+	}
+	nav{
+		display: flex;
+		flex-flow: row wrap;
+
+	}
+
+	nav a{
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		width: 800px;
+		height: 50px;
+		border: 1px solid gray;
+	}
+
+	.logoSmall{
+		width:200px;
+		height: 40px;
+		margin-left: 7%;
+		margin-top: 5%;
+		
+	}
+
+	.first{
+		margin-top: 30%;
+	}
+
+
+	.second{
+		width: 100%;
+		justify-content: flex-start;
+		flex-flow: row wrap;
+	}
+	.second div{
+		width: 100%;
+	}
+
+	.thirdSect{
+		width: 100%;
+		justify-content: flex-start;
+		flex-flow: row wrap;
+	}
+
+	.thirdSect div{
+		width: 100%;
+	}
+
+	.lastA{
+		width: 0px;
+		border: none;
+	}
+
 
     
 }
