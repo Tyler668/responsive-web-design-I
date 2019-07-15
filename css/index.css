@@ -65,12 +65,22 @@ body {
 nav {
 	background-color: rgb(255, 255, 255);
 	display: flex;
-	width: 100%;
+	width: 1024px;
 	justify-content: space-between;
 	align-items: center;
 	position: fixed;
-	width: 1024px;
 	overflow: hidden;
+	top:0;
+	height: 75px;
+}
+
+#navDiv{
+    width: 1024px;
+    background-color: rgb(255, 255, 255);
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	position: fixed;
 	top:0;
 	height: 75px;
 }
@@ -168,15 +178,21 @@ h2, p {
 
 .third {
 	width: 100%;
-	margin: 20px 0;
+	
 	display: flex;
 	justify-content: space-between;
 	padding-bottom: 20px;
 }
 
 .third div {
-	width: 33%;
-	padding: 0px 0;
+    width: 33%;
+}
+
+.thirdSect{
+    margin: 0 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .middle-img {
@@ -191,7 +207,8 @@ address {
 #contactinfo {
 	padding: 20px 0;
 	display: flex;
-	flex-flow: column wrap;
+    flex-flow: column wrap;
+    margin-left: 20px;
 }
 
 footer {
@@ -340,23 +357,73 @@ ul {
  }
 
 
+ .hr{
+     display: flex;
+     justify-content: center;
+     justify-items: center;
+     margin: 0 auto;
+ }
 
+.hiddenLogo{
+visibility: hidden;
+
+}
  /* Responsive Design */
 
  @media screen and (max-width: 800px){
+    body{
+        width: 800px;
+    }
+
+    .logo{
+        display: none;
+    }
+    
+    #navDiv{
+        width: 800px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 20px;
+    }
+    nav{
+        width: 100%;
+        padding-right: 0%;
+        padding-left: 3%
+    }
+
+    nav a {
+        padding: 0;
+        
+    }
+
     #circle{
         display: none;
     }
 
+    .first{
+        width: 800px;
+        display: flex;
+        justify-content: center;
+    }
+
     #firsthalf{
         width: 100%;
+        display: flex;
         justify-content: center;
+        justify-items: center;
+        margin: 0 auto;
 
+    }
+
+    #slogan{
+        margin-right: 0%;
     }
 
     #homeButton{
-        margin-left: 10%;
+        margin-left: 12%;
     }
+
+  
 
  }
 
